@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Sync Cookies",
+  "version": "1.0",
+  "description": "Sync cookies between UAT and localhost environments",
+  "icons": {
+    "48": "cookie.png"
+  },
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://localhost:*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sync Cookies",
+    "default_icon": "cookie.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
